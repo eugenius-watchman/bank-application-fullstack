@@ -1,0 +1,93 @@
+/* deposit.module.css */
+
+/* Main container styling */
+.deposit_container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading style */
+.deposit_container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Form styling */
+.deposit_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Label styling */
+.deposit_container label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+/* Input field styling */
+.deposit_container input[type="number"] {
+  padding: 0.8rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.deposit_container input[type="number"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Submit button styling */
+.deposit_container input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deposit_container input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Submit button disabled state */
+.customer_container input[type="submit"]:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Success message styles */
+.success_message {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background-color: #e6f7e6;
+  color: #2d7d2d;
+  border: 1px solid #c3e6c3;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .deposit_container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
