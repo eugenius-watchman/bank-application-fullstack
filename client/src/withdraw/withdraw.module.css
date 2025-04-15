@@ -1,0 +1,114 @@
+/* withdraw.module.css */
+
+/* Main container styling */
+.withdraw_container {
+    max-width: 500px;               /* Maximum width of the container */
+    margin: 2rem auto;             /* Center the container with space around */
+    padding: 2rem;                 
+    border-radius: 10px;           
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  }
+  
+  /* Heading style */
+  .withdraw_container h1 {
+    color: #2c3e50;              
+    text-align: center;           
+    margin-bottom: 1.5rem;       
+    font-size: 1.8rem;        
+  }
+  
+  /* Form layout */
+  .withdraw_container form {
+    display: flex;                /* Use flexbox for layout */
+    flex-direction: column;       /* Stack form items vertically */
+    gap: 1.5rem;                 /* Space between form elements */
+  }
+  
+  /* Label styling */
+  .withdraw_container label {
+    display: flex;                /* Use flexbox */
+    flex-direction: column;      /* Stack label text above input */
+    gap: 0.5rem;                 /* Small space between label and input */
+    font-weight: 500;            /* Slightly bold text */
+    color: #34495e;              /* Dark blue-gray color */
+  }
+  
+  /* Input field styling */
+  .withdraw_container input[type="number"] {
+    padding: 0.8rem;             /* Comfortable inner spacing */
+    border: 1px solid #bdc3c7;   /* Light gray border */
+    border-radius: 6px;          
+    font-size: 1rem;             /* Normal text size */
+    transition: all 0.3s ease;   /* Smooth transitions for interactions */
+  }
+  
+  /* Input field when focused/clicked */
+  .withdraw_container input[type="number"]:focus {
+    outline: none;               /* Remove default browser outline */
+    border-color: #3498db;       /* Blue border when active */
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2); /* Light blue glow */
+  }
+  
+  /* Input field when disabled during loading */
+  .withdraw_container input[type="number"]:disabled {
+    background-color: #f5f5f5;   /* Light gray background */
+    cursor: not-allowed;         /* Show not-allowed cursor */
+  }
+  
+  /* Submit button styling */
+  .withdraw_container input[type="submit"] {
+    background-color: #e74c3c;  
+    color: white;                
+    padding: 0.8rem;             /* Comfortable button size */
+    border: none;               
+    border-radius: 6px;         
+    font-size: 1rem;             /* Normal text size */
+    font-weight: 600;            /* Bold text */
+    cursor: pointer;            
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Button hover state */
+  .withdraw_container input[type="submit"]:hover {
+    background-color: #c0392b;   /* Darker red on hover */
+  }
+  
+  /* Button disabled state */
+  .withdraw_container input[type="submit"]:disabled {
+    background-color: #95a5a6;   /* Gray when disabled */
+    cursor: not-allowed;         /* Not-allowed cursor */
+  }
+  
+  /* Success message styling */
+  .success {
+    color: #27ae60;              /* Green text */
+    margin-top: 1rem;            /* Space above message */
+    padding: 0.8rem;            
+    background-color: #d5f5e3;   /* Light green background */
+    border-radius: 6px;          
+    border-left: 4px solid #2ecc71; /* Green accent border */
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #e74c3c;              /* Red text */
+    margin-top: 1rem;            /* Space above message */
+    padding: 0.8rem;           
+    background-color: #fadbd8;   /* Light red background */
+    border-radius: 6px;        
+    border-left: 4px solid #e74c3c; /* Red accent border */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .withdraw_container {
+      margin: 1rem;              /* Less margin on small screens */
+      padding: 1.5rem;           /* Slightly less padding */
+    }
+    
+    .withdraw_container h1 {
+      font-size: 1.5rem;         /* Slightly smaller heading */
+    }
+  }
