@@ -1,0 +1,102 @@
+/* balance.module.css */
+
+/* Main container styling */
+.balance_container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Heading style */
+  .balance_container h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Form styling */
+  .balance_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Label styling */
+  .balance_container label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  /* Input field styling */
+  .balance_container input[type="number"] {
+    padding: 0.8rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .balance_container input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Submit button styling */
+  .balance_container input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .balance_container input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  .balance_container input[type="submit"]:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  /* Balance result display */
+  .balance_result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #2ecc71;
+  }
+  
+  .balance_result h3 {
+    color: #27ae60;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  /* Balance amount styling */
+.amount {
+  color: #27ae60;
+  font-weight: bold;
+}
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .balance_container {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  }
